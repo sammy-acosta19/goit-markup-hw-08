@@ -1,0 +1,48 @@
+.section-benefits {
+    height: 438px;
+
+    .container {
+        width: 1200px;
+        height: 250px;
+      }
+      &__list {
+        width: 1170px;
+        height: 250px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      &__card {
+        list-style: none;
+        width: 270px;
+      }
+      &__contend {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-gray-1;
+        border-radius: 15px;
+        height: 120px;
+        margin-bottom: 15px;
+        width: 270px;
+      } 
+      &__icon {
+        width: 70px;
+        height: 70px;
+      }
+      &__subtitle {
+        padding-top: 15px;
+        height: 50px;
+        text-transform: uppercase;
+        color: $color-primary-black;
+      }
+      &__description {
+        color: $color-text-gray;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }    
+  }

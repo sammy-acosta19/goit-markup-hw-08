@@ -1,0 +1,46 @@
+.section-clients {
+    height: 377px;
+
+    .container{
+        width: 1200px;
+        height: 189px;
+      }
+      &__title {
+        color: $color-primary-black;
+        font-size: 32px;
+        font-weight: 700px;
+        padding: 30px 0;
+        text-align: center;
+      }
+      &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+      }
+      &__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: solid 1px $color-gray-2;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 92px;
+        width: 170px;
+      }
+      &__card:hover {
+        height: 92px;
+        width: 170px;
+        border: solid 2px $color-accent;
+        border-radius: 5px;
+      }
+      &__icon {
+        fill: $color-gray-2; 
+      }
+      &__card:hover, 
+      &__icon:hover {
+        fill: $color-accent;
+      }        
+  }
+  

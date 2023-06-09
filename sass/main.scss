@@ -1,0 +1,53 @@
+@import "./utils/variables";
+@import "./components/page-header";
+@import "./components/page-main";
+@import "./components/section-background";
+@import "./components/section-benefits";
+@import "./components/section-services";
+@import "./components/section-professions";
+@import "./components/section-clients";
+@import "./components/section-footer";
+@import "./components/portfolio";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: $color-primary-white;
+    color: $color-text-gray;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  a {
+    text-decoration: none;
+  }
+  section {
+    padding: 94px 0;
+  }
+  .container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section > h2 {
+    color: $color-primary-black;
+    font-size: 32px;
+    font-weight: 700px;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .no-top-pading {
+    padding-top: 0;
+  }
+  .logo {
+    color: $color-accent;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+ 

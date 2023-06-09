@@ -1,0 +1,80 @@
+.section-professions  {
+    height: 769px;
+    background-color: $color-gray-1;
+
+    .container {
+        width: 1200px;
+        height: 430px;
+      }
+      &__title {
+        color: $color-primary-black;
+        font-size: 32px;
+        font-weight: 700px;
+        padding: 30px 0;
+        text-align: center;
+
+      }
+      &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        padding-top: 50px;
+      }
+      &__card {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px; 
+        background-color: $color-primary-white;
+        text-align: center;
+        list-style: none;
+      }
+      &__image {
+        height: 270px;
+      }
+      &__name {
+        color: $color-primary-black;
+        margin: 20px 0 10px 0;
+      }
+      &__job {
+        margin-bottom: 30px;
+      } 
+   
+      .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      
+        padding: 10px 20px;
+        margin-bottom: 20px;
+
+        &__icon {
+            display: block;
+            width: 35px;
+            height: 35px;
+            border-radius: 25px;
+          }
+          &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+            border-radius: 25px;
+            height: 35px;
+            width: 35px;
+          }
+          &__icon--white {
+            width: 20px;
+            height: 20px;
+            fill: $color-gray-2;
+          }
+          &__icon:hover .social-icons__link {
+            background-color: $color-accent;
+          }
+          &__icon:hover .social-icons__link .social-icons__icon--white {
+            fill: $color-primary-white; 
+          }       
+      }      
+  }
+
+  

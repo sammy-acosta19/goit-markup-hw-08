@@ -1,0 +1,89 @@
+.page-header {
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+      }  
+      
+      .navbar {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        &__menu {
+            display: flex;
+            list-style: none;
+            gap: 80px;
+          }
+        &__link {
+            color: $color-primary-black;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            text-transform: capitalize;
+          }
+         &__link--current::after{ 
+            display: block;
+            position: relative;
+            content: "";
+            background-color:$color-accent;
+            width: 100%;
+            border-radius: 2px;
+            height: 4px;
+            top: 28px;
+          } 
+          
+          &__link:hover,
+          &__link:focus,
+          &__link--current {
+            color: $color-accent;
+            fill:  $color-accent;
+          }      
+      }
+      
+      .info-contact {
+        display: flex;
+        list-style: none;
+        gap: 80px;
+
+        &__link {
+            display: flex;
+            align-items:center;
+            gap: 10px;
+            color:  $color-text-gray;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            height: 20px;
+          }
+          &__icon {
+            fill: $color-text-gray;
+          }
+          &__icon--email {
+            width: 16px;
+            height: 12px;
+          }
+          &__icon--smartphone {
+            width: 10px;
+            height: 16px;
+          }
+          &__link:hover,
+          &__link:focus, 
+          &__icon:hover, 
+          &__icon:focus {
+            color: $color-accent;
+            fill:  $color-accent;
+          }    
+      }    
+  }
+  
+  
+  

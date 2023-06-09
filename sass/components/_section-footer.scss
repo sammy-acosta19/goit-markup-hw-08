@@ -1,0 +1,129 @@
+.section-footer {
+    padding: 94px $container-padding;
+    background-color: $color-bg-black;
+
+    .container {
+        position: relative;
+      }
+      &__contacts {
+        list-style: none;
+        width: 230px;
+        height: 80px;
+        padding-top: 20px;
+      }
+      &__contact {
+        display: block;
+        color: $color-gray-2;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        text-decoration: none;
+        padding: 5px 0;
+      }
+      &__contact:hover {
+        color: $color-primary-white;
+      } 
+      .networks {  
+        position: relative;
+        bottom: 105px;
+
+        &__title {
+            display: flex;
+            justify-content:space-around;
+            position: absolute;
+            left: 290px;
+            color: $color-primary-white;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+          &__icons {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            position: absolute;
+            right: 675px;
+            list-style: none;
+            gap: 10px;
+            width: 206px;
+            height: 80px;
+            padding-top: 50px;
+          } 
+          &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            background-color: $color-primary-white-10Perc;
+            border-radius: 25px;
+            box-shadow: hsla(0, 0%, 0%, 0.479) 0 3px 5px  ;
+            cursor: pointer;
+            height: 44px;
+            width: 44px;
+          } 
+          &__icon--black {
+            width: 20px;
+            height: 20px;
+            fill: $color-primary-white;
+          }
+          &__icon:hover{
+            background-color: $color-accent;
+          }
+          &__icon:hover .social-icons__icon--black {
+            fill: $color-primary-white;
+          }       
+      }  
+      
+      .form {
+        position: relative;
+
+        &__title {
+            position: absolute;
+            left: 580px;
+            bottom: 70px;
+            color: $color-primary-white;
+            font-weight: 700;
+            padding-bottom: 20px;
+          }
+          &__userEmail {
+            position: absolute;
+            left: 580px;
+            bottom: 20px;
+            width: 358px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: $color-bg-black;
+            border-radius: 4px;
+            color: var(--gray-1);
+            cursor: pointer;
+            padding: 10px;
+            outline: none;
+          }
+          &__buttonSend {
+            position: absolute;
+            left:950px;
+            bottom: 20px;
+            width: 200px;
+            height: 50px;
+            background: $color-accent;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            color: $color-primary-white;
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            padding-right: 50px;
+          }
+          &__buttonSend:hover {
+            background-color: $color-hover;
+          }
+          &__iconSend{
+            position: absolute;
+            left: 1095px;
+            bottom: 40px;
+          }          
+      }  
+  }
+  
+  
